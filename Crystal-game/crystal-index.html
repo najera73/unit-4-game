@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--style sheets in order of importance-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 id="main-header" class="display-1">CRYSTAL GAME</h1>
+        <!--number player needs to try and reach-->
+        <h2 id="mysteryNumber"></h2>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!--thank you to natplusultra for guidance!!-->
+            <!--crystal images which need to also be buttons. not sure why the image is not showing up, research later-->
+            <!--working now, had an error in path, confirmed click capture on crystal images as well with console.log-->
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <img class="img-responsive" id="crystal1" src="assets/images/crystal1.png" width="200" height="200" alt="Crystal 1"/>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <img class="img-responsive" id="crystal2" src="assets/images/crystal2.png" width="200" height="200" alt="Crystal 2"/>
+            </div> 
+
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="img-responsive" id="crystal3" src="assets/images/crystal3.png" width="200" height="200" alt="Crystal 3"/>
+            </div> 
+
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                    <img class="img-responsive" id="crystal4" src="assets/images/crystal4.png" width="200" height="200" alt="Crystal 4"/>
+            </div> 
+
+        </div>
+    
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 instructions text-center">
+            <!--game instructions will be added at end when all works (hopefully)-->
+            <p class="text-white lead">Each crystal floating before you has a hidden value until you click on it. <br> Your challenge will be to click on the crystals and add up your total score to match the mystery number. <br> Match the mystery number and you win. Go over the mystery number and you lose. <br> GOOD LUCK! </p>
+        </div>
+    </div>
+    <!--spaced score, play again button and wins/losses using responsive bootstrap 4x3-->
+    <div class="row text-center">
+        <div class="col-lg-4 total">
+            <h3 id="score" class="text-white">SCORE:</h3>
+        </div>
+
+        <div class="col-lg-4 button">
+            <h3 id="winOrLose"></h3>
+            <button id="reset" type="button" class="btn btn-primary btn-lg">PLAY AGAIN</button>
+        </div>
+
+        <div class="col-lg-4 scores">
+            <p class="text-white""><span id="wins"></span></p>
+            <p class="text-white""><span id="losses"></span></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+
+body {
+    background-image: url("../images/background3.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main-header {
+    
+    font-family: fantasy     
+}
+
+
+#mysteryNumber {
+
+    color: blue;
+    font-family: fantasy  
+}
+
+
+p {
+    font-family: fantasy
+
+
+}
+
+#reset {
+
+    font-family: fantasy
+
+
+}
+
+#score {
+    
+    font-family: fantasy
+}
